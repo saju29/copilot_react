@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 const ListPosts = () => {
     const [posts, setPosts] = useState([]);
-
-    useEffect(() => {
+//I made a change in the brach    
+    useEffect(() => { //This is a hook that runs after the component is rendered
         const fetchPosts = async () => {
             try {
                 const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
